@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/user"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="youremail@example.com"
+            android:textSize="14sp"
+            android:textColor="#777" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#CCCCCC" />
+
+        <!-- Lost Items Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textLostCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lost: 0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- Found Items Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textFoundCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Found: 0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- Returned Items Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textReturnedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returned: 0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- ✅ IMPACT BANNER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/textImpact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉 You’ve helped 3 people get their items back!"
+                android:textSize="16sp"
+                android:textColor="#222"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- ✅ RECENT ACTIVITY FEED -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Activity"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/recentActivityContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:padding="16dp">
+
+    <!-- App Logo / User Profile Image -->
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewProfile"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:src="@drawable/logo"-->
+<!--        android:contentDescription="@string/profile_image"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:padding="4dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:clipToOutline="true"/>-->
+
+<!--    &lt;!&ndash; User Name &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/textViewUserName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:text="@string/ilost_found"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold|italic" />-->
+
+<!--    &lt;!&ndash; User Email &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/textViewUserEmail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/user_example_com"-->
+<!--        android:textSize="14sp"-->
+<!--        android:textColor="@android:color/white"/>-->
+</LinearLayout>

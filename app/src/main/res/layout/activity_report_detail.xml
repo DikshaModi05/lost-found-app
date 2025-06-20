@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Big Item Image -->
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_gradient"
+            android:contentDescription="Item Image" />
+
+        <!-- Card with item details -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="6dp"
+            android:padding="16dp"
+            android:backgroundTint="#F8F8F8"
+            android:radius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewDetailType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Type: "
+                    android:textColor="#555555"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDetailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Name:"
+                    android:textColor="#000000"
+
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewDetailDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Date: "
+
+                    android:textColor="#555555"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDetailLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Location: "
+
+                    android:textColor="#555555"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDetailReporter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Reported By: "
+
+                    android:textColor="#555555"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDetailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Description: "
+
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <!-- Horizontal layout for Status and Contact Reporter -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:weightSum="2">
+
+        <!-- Status Button -->
+        <Button
+            android:id="@+id/buttonStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status: Missing"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:backgroundTint="#D32F2F"
+            android:elevation="4dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical" />
+
+        <!-- Contact Reporter Button -->
+        <Button
+            android:id="@+id/buttonContactReporter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contact Reporter"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:elevation="4dp"
+            android:drawableStart="@drawable/emaillogo"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

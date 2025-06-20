@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settings_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/settingsa"
+        android:titleTextColor="@android:color/white"
+        android:elevation="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle">
+
+            <!-- 🔔 Notifications -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="14dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable Notifications"
+                    android:textSize="16sp"
+                    android:textColor="#333" />
+
+                <Switch
+                    android:id="@+id/switch_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- 🌙 Dark Mode -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="14dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dark Mode"
+
+
+                    android:textSize="16sp"
+                    android:textColor="#333" />
+
+                <Switch
+                    android:id="@+id/switch_dark_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+<!--            &lt;!&ndash; Divider &ndash;&gt;-->
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="#DDD"-->
+<!--                android:layout_marginVertical="16dp" />-->
+
+            <!-- 📝 Feedback -->
+            <TextView
+                android:id="@+id/text_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Feedback"
+                android:textSize="16sp"
+                android:padding="14dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#000" />
+
+            <!--                android:drawableStart="@drawable/"-->
+<!--                android:drawablePadding="12dp"-->
+
+
+            <!-- ℹ️ About -->
+            <TextView
+                android:id="@+id/text_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_this_app"
+                android:textSize="16sp"
+                android:padding="14dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#000" />
+<!--                android:drawableStart="@drawable/ic_info"-->
+<!--                android:drawablePadding="12dp"-->
+
+            <!-- 🔒 Change Password -->
+            <TextView
+                android:id="@+id/text_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:textSize="16sp"
+
+                android:padding="14dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#000" />
+<!--            android:drawableStart="@drawable/ic_password"-->
+<!--            android:drawablePadding="12dp"-->
+
+            <!-- 📄 Terms & Privacy Policy -->
+            <TextView
+                android:id="@+id/text_terms_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_privacy_policy"
+                android:textSize="16sp"
+
+                android:padding="14dp"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="#000" />
+<!--            android:drawableStart="@drawable/ic_terms"-->
+<!--            android:drawablePadding="12dp"-->
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
