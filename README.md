@@ -17,22 +17,12 @@ This Android application allows verified MES College users to report **lost** or
 - 🖼️ **Splash Screen** – Clean intro screen while the app loads.
 - 📝 **Register & Login** – Connected to Firebase Auth.
 - 🏠 **Homepage** – Toolbar with Search, Notifications, and Profile icons.
+- ⚙️ **Settings Page** – Allow user control over app behavior (dark mode, notifications, etc.)
 - ☰ **Navigation Drawer** – Includes Home, Lost Items, Found Items, Settings, and Logout.
 - ➕ **Floating Action Button** – Users can report items (Lost or Found) via dialog selection.
 - 📤 **Report Forms** – Users can fill and submit details of lost/found items.
 - 🔗 **Firebase Realtime Database** – For storing and retrieving reports.
-
----
-
-## 🛠️ Work in Progress
-
-The following features are under development:
-
-- 🔍 **Category-Based Filtering** – Organize items under tags like ID Cards, Phones, Keys, etc.
-- 🗺️ **Map Integration** – Let users pin where the item was lost/found.
-- 🤖 **In-App Chatbot** – Provide help to users for common actions and support.
 - 🧾 **Lost & Found Segregation** – Improve UI to clearly separate lost vs found items.
-- ⚙️ **Settings Page** – Allow user control over app behavior (dark mode, notifications, etc.)
 
 ---
 
